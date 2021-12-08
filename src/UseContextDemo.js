@@ -17,9 +17,8 @@ function UseContextDemo(){
       <ContextValue.Provider value={{value,value1,changeValue}}>
           <h1>Context Demo</h1>
           <CheckContext/>
-           <CheckContext1/> 
+          <CheckContext1/> 
       </ContextValue.Provider>  
-        
     )
 }
 
