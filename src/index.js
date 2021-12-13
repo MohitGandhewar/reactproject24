@@ -14,7 +14,7 @@ const store=createStore(reducer)
 
 ReactDOM.render(
   <Provider store={store}>
-      <UseContextDemo/>
+      <App/>
   </Provider>
     
   ,

@@ -1,3 +1,4 @@
+import {connect} from 'react-redux'
 
 function Counter(props){
 
@@ -9,7 +10,15 @@ function Counter(props){
     )
 }
 
-export default Counter
+// it maps the state to the props of current component
+function mapStateToProps(state){
+    return{
+        count:state.counterReducer
+    }
+}
+
+// bind react and redux
+export default connect(mapStateToProps)(Counter)
 
 
 
@@ -17,7 +26,7 @@ export default Counter
 
 // action:
           // It is an object with two properties: type and payload
-          // type : action type are contants
+          // type : action type are constants
           // payload : it is the value or data passed               
 
 // reducer:
